@@ -24,14 +24,14 @@ clang++ -g \
   -o generator.out
 
 # generate
-LD_LIBRARY_PATH=/halide/Halide-Runtime/lib ./generator.out -r halide_runtime_x86 -e object -o . target=host-x86-64
+LD_LIBRARY_PATH=/halide/Halide-Runtime/lib ./generator.out -r halide_runtime_arm64 -e object -o . target=host-arm-64
 
 # wait sync docker to disk
 sleep 1;
 
 for h in lib*_linux.a; do
   echo "ar ${h} halide_runtime";
-  ar q ${h} halide_runtime_x86.o 
+  ar q ${h} halide_runtime_arm64.o 
 done
 
 mkdir -p include
@@ -47,8 +47,8 @@ for h in lib*.a; do
   mv  ${h} ./lib/
 done
 
-echo "move halide_runtime_x86.o to lib/"
-mv halide_runtime_x86.o ./lib/
+echo "move halide_runtime_arm64.o to lib/"
+mv halide_runtime_arm64.o ./lib/
 
 rm blurry.out
 rm generator.out

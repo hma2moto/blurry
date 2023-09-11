@@ -11,7 +11,7 @@ void generate_static_link(std::vector<Target::Feature> features, Func fn, std::v
   {
     Target target;
     target.os = Target::OSX;
-    target.arch = Target::X86;
+    target.arch = Target::ARM;
     target.bits = 64;
     target.set_features(features);
     fn.compile_to_static_library(
@@ -24,7 +24,7 @@ void generate_static_link(std::vector<Target::Feature> features, Func fn, std::v
   {
     Target target;
     target.os = Target::Linux;
-    target.arch = Target::X86;
+    target.arch = Target::ARM;
     target.bits = 64;
     target.set_features(features);
     fn.compile_to_static_library(
@@ -45,7 +45,7 @@ void generate_static_link(std::vector<Target::Feature> features, Pipeline pipe, 
   {
     Target target;
     target.os = Target::OSX;
-    target.arch = Target::X86;
+    target.arch = Target::ARM;
     target.bits = 64;
     target.set_features(features);
     pipe.compile_to_static_library(
@@ -58,7 +58,7 @@ void generate_static_link(std::vector<Target::Feature> features, Pipeline pipe, 
   {
     Target target;
     target.os = Target::Linux;
-    target.arch = Target::X86;
+    target.arch = Target::ARM;
     target.bits = 64;
     target.set_features(features);
     pipe.compile_to_static_library(
@@ -79,7 +79,7 @@ void generate_static_link_runtime(std::vector<Target::Feature> features, Func fn
   {
     Target target;
     target.os = Target::OSX;
-    target.arch = Target::X86;
+    target.arch = Target::ARM;
     target.bits = 64;
     target.set_features(features);
     fn.compile_to_static_library(
@@ -92,7 +92,7 @@ void generate_static_link_runtime(std::vector<Target::Feature> features, Func fn
   {
     Target target;
     target.os = Target::Linux;
-    target.arch = Target::X86;
+    target.arch = Target::ARM;
     target.bits = 64;
     target.set_features(features);
     fn.compile_to_static_library(
@@ -1695,11 +1695,11 @@ int generate(char **argv){
   printf("generate...\n");
 
   std::vector<Target::Feature> features;
-  features.push_back(Target::AVX);
+  //features.push_back(Target::AVX);
   features.push_back(Target::AVX2);
   features.push_back(Target::FMA);
   features.push_back(Target::F16C);
-  features.push_back(Target::SSE41);
+  //features.push_back(Target::SSE41);
   features.push_back(Target::EmbedBitcode);
   features.push_back(Target::EnableLLVMLoopOpt);
   features.push_back(Target::Feature::NoRuntime);
