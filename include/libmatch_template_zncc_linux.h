@@ -41,11 +41,11 @@ extern "C" {
 #endif
 
 HALIDE_FUNCTION_ATTRS
-int match_template_zncc_par_for_zncc_avg_s0_y_rebased__1(void *__user_context, int32_t _zncc_avg_s0_y_rebased, uint8_t *_closure_arg__310);
+int match_template_zncc_par_for_zncc_avg_s0_y_rebased__1(void *__user_context, int32_t _zncc_avg_s0_y_rebased, uint8_t *_closure_arg__290);
 HALIDE_FUNCTION_ATTRS
-int match_template_zncc_par_for_zncc_stddev_s0_y_rebased__3(void *__user_context, int32_t _zncc_stddev_s0_y_rebased, uint8_t *_closure_arg__311);
+int match_template_zncc_par_for_zncc_stddev_s0_y_rebased__1(void *__user_context, int32_t _zncc_stddev_s0_y_rebased, uint8_t *_closure_arg__291);
 HALIDE_FUNCTION_ATTRS
-int match_template_zncc_par_for_match_template_zncc_s0_x_xo_ti__1(void *__user_context, int32_t _match_template_zncc_s0_x_xo_ti, uint8_t *_closure_arg__312);
+int match_template_zncc_par_for_match_template_zncc_s0_x_xo_ti__1(void *__user_context, int32_t _match_template_zncc_s0_x_xo_ti, uint8_t *_closure_arg__292);
 HALIDE_FUNCTION_ATTRS
 int match_template_zncc(struct halide_buffer_t *_src_buffer, int32_t _width, int32_t _height, struct halide_buffer_t *_tpl_buffer, int32_t _tpl_width, int32_t _tpl_height, struct halide_buffer_t *_match_template_zncc_buffer);
 
