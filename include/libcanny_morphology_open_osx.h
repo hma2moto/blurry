@@ -45,7 +45,7 @@ int canny_morphology_open_par_for_erode_tmp__2_s0_y_y(void *__user_context, int3
 HALIDE_FUNCTION_ATTRS
 int canny_morphology_open_par_for_dilate_tmp__2_s0_y_y(void *__user_context, int32_t _dilate_tmp__2_s0_y_y, uint8_t *_closure_arg__265);
 HALIDE_FUNCTION_ATTRS
-int canny_morphology_open_par_for_hysteresis__2_s0_x_xo_ti(void *__user_context, int32_t _hysteresis__2_s0_x_xo_ti, uint8_t *_closure_arg__266);
+int canny_morphology_open_par_for_hysteresis_2_s0_x_xo_ti__1(void *__user_context, int32_t _hysteresis__2_s0_x_xo_ti, uint8_t *_closure_arg__266);
 HALIDE_FUNCTION_ATTRS
 int canny_morphology_open_par_for_canny_morphology_open__4_s0_ch(void *__user_context, int32_t _canny_morphology_open__4_s0_ch, uint8_t *_closure_arg__267);
 HALIDE_FUNCTION_ATTRS

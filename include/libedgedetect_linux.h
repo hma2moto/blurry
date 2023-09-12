@@ -45,7 +45,7 @@ int edgedetect_par_for_edgedetect_s0_ch_par_for_edgedetect_s0_x_xo_ti_ti__2(void
 HALIDE_FUNCTION_ATTRS
 int edgedetect_par_for_edgedetect_s0_ch_par_for_edgedetect_s0_x_xo_ti_ti__3(void *__user_context, int32_t _edgedetect_s0_x_xo_ti_ti, uint8_t *_closure_arg__247);
 HALIDE_FUNCTION_ATTRS
-int edgedetect_par_for_edgedetect_s0_ch__4(void *__user_context, int32_t _edgedetect_s0_ch, uint8_t *_closure_arg__245);
+int edgedetect_par_for_edgedetect_s0_ch__6(void *__user_context, int32_t _edgedetect_s0_ch, uint8_t *_closure_arg__245);
 HALIDE_FUNCTION_ATTRS
 int edgedetect(struct halide_buffer_t *_src_buffer, int32_t _width, int32_t _height, struct halide_buffer_t *_edgedetect_buffer);
 
